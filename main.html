@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="TBD">
+    <meta name="keywords" content="Counseling, McKinney, Allen, Frisco, North Dallas, mental health">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cole Counseling</title>
+    <link rel = "stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <style>
+       #map {
+        height: 25em;
+        width: 75%;
+       }
+    </style>
+  </head>
+  <body class = "full">
+    <header>
+      <div id = "left-side">
+        <div class = "logo"> C </div>
+        <div class = "company"> COLE COUNSELING, PLLC
+        </div>
+        <div class = "name"> Monica Cole M.S., LPC
+        </div>
+      </div>
+      <div id= "right-side">
+        <div class = "address"> 1833B West Hunt St. McKinney, TX 75069 </div>
+        <div class = "phone"><a href="tel:1-214-566-8675"> (214) 566-8675</a>
+        </div>
+      </div>
+      <div id = "navbar">
+        <ul>
+          <li class="menu"> <a href = "main.html">Home</a></li>
+          <li class="menu"> <a href = "about.html">About</a></li>
+          <li class="menu"> <a href = "contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <img id = "sunset" src = images/sunset.jpg alt="image unavailable">
+
+    <div class="information">
+      <h2>Cole Counseling</h2>
+      <p>This section will have a description of your general practice. You can list the types of things you treat here or just give a general business philosophy. Some are as simple as "We treate children, teens and adults facing mental health issues" while others go into complex details their treatment beliefs and what they stand for. This is something we can craft together. We can also change the font types and size to give you the look you like.</p>
+    </div>
+
+    <div id="map"></div>
+   <script>
+     function initMap() {
+       var uluru = {lat: 33.199228, lng: -96.635168};
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 4,
+         center: uluru
+       });
+       var marker = new google.maps.Marker({
+         position: uluru,
+         map: map
+       });
+     }
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPuxryoO4K6ZeB8fk3lzK2mAgCCKYcjt8&callback=initMap">
+   </script>
+
+  </body>
+</html>
