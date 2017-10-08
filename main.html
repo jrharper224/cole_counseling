@@ -25,7 +25,7 @@
         </div>
       </div>
       <div id= "right-side">
-        <div class = "address"> 1833B West Hunt St. McKinney, TX 75069 </div>
+        <div class = "address"> <p>1833B West Hunt St.</p> <p>McKinney, TX 75069 </p></div>
         <div class = "phone"><a href="tel:1-214-566-8675"> (214) 566-8675</a>
         </div>
       </div>
@@ -51,7 +51,7 @@
      function initMap() {
        var uluru = {lat: 33.199228, lng: -96.635168};
        var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 4,
+         zoom: 16,
          center: uluru
        });
        var marker = new google.maps.Marker({
